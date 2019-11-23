@@ -11,7 +11,7 @@ const StarCard = props => {
       <Card body>
         <CardTitle>{props.character}</CardTitle>
         <CardText>
-          `Height! {props.howTall}, Weight! {props.weight} ``.
+          Height: {props.howTall}cm, Weight: {props.weight}kg
         </CardText>
       </Card>
     </div>
