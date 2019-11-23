@@ -1,10 +1,10 @@
-import React, { usestate, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import StarCard from "./StarCard";
 import {} from "reactstrap";
 
 export default function StarsData() {
-  const [heros, setHeros] = usestate([]);
+  const [heros, setHeros] = useState([]);
 
   useEffect(() => {
     axios
