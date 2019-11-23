@@ -9,11 +9,11 @@
 
 /* write your parent styles in here for your App.js */
 
-.parentcard {
+/* .parentcard {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
+} */
 
 .card {
   margin: 20px;
