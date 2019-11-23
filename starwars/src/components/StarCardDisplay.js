@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import StarCard from "./StarCard";
-import {} from "reactstrap";
+import { Container, Row } from "reactstrap";
 
 export default function StarsData() {
   const [heros, setHeros] = useState([]);
@@ -19,25 +19,27 @@ export default function StarsData() {
   }, []);
 
   return (
-    <div>
-      {heros.map(item => {
-        //  console.log(item.name)
+    <Container>
+      <Row>
+        {heros.map(item => {
+          //  console.log(item.name)
 
-        console.log(item.mass);
-        return (
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <StarCard
-                  character={item.name}
-                  howTall={item.height}
-                  weight={item.mass}
-                />
+          console.log(item.mass);
+          return (
+            <div>
+              <div class="row">
+                <div class="col">
+                  <StarCard
+                    character={item.name}
+                    howTall={item.height}
+                    weight={item.mass}
+                  />
+                </div>
               </div>
             </div>
-          </div>
-        );
-      })}
-    </div>
+          );
+        })}
+      </Row>
+    </Container>
   );
 }

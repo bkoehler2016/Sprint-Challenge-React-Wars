@@ -8,8 +8,8 @@ const StarCard = props => {
 
   return (
     <div key={props.character}>
-      <Card body>
-        <CardTitle>{props.character}</CardTitle>
+      <Card>
+        <strong>{props.character}</strong>
         <CardText>
           Height: {props.howTall}cm, Weight: {props.weight}kg
         </CardText>
